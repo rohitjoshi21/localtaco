@@ -28,8 +28,8 @@ def create_hparams(hparams_string=None, verbose=False):
         # Data Parameters             #
         ################################
         load_mel_from_disk=False,
-        training_files='audiosamples/train.txt',
-        validation_files='audiosamples/val.txt',
+        training_files='audiosamples/train.tsv',
+        validation_files='audiosamples/val.tsv',
         text_cleaners=['english_cleaners'],
 
         ################################
