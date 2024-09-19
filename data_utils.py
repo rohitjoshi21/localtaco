@@ -32,14 +32,14 @@ class TextMelLoader(torch.utils.data.Dataset):
         # separate filename and text
         audiopath, text = audiopath_and_text[0]+'.wav', audiopath_and_text[1]
         text = self.get_text(text)
-        print(AUDIOLOCATION+audiopath)
+        # print(AUDIOLOCATION+audiopath)
         mel = self.get_mel(AUDIOLOCATION+audiopath)
         return (text, mel)
 
     def get_mel(self, filename):
         if not self.load_mel_from_disk:
             audio, sampling_rate = load_wav_to_torch(filename)
-            print(sampling_rate, self.stft.sampling_rate, filename)
+            # print(sampling_rate, self.stft.sampling_rate, filename)
             if sampling_rate != self.stft.sampling_rate:
                 
                 raise ValueError("{} {} SR doesn't match target {} SR".format(
