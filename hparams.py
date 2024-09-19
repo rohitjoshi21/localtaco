@@ -1,11 +1,14 @@
 import tensorflow as tf
 from text import symbols
 
+class HParams:
+    def __init__(self, **kwargs):
+        self.__dict__.update(kwargs)
 
 def create_hparams(hparams_string=None, verbose=False):
     """Create model hyperparameters. Parse nondefault from given string."""
 
-    hparams = tf.contrib.training.HParams(
+    hparams = HParams(
         ################################
         # Experiment Parameters        #
         ################################
