@@ -1,0 +1,4 @@
+dataset root address is in data_utils.py AUDIOLOCATION
+dataset splitter is in data_utils.py SPLITTER
+
+address and text of training and validation files is in hparams.py

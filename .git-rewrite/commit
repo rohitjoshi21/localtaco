@@ -1,0 +1,6 @@
+tree 6fb7045a0368a63c99eba3823c33dff334be139e
+parent 1480f82908fea60a69a656850db8b6f7e32ed4b8
+author rafaelvalle <rafaelvalle@nvidia.com> 1554327671 -0800
+committer rafaelvalle <rafaelvalle@nvidia.com> 1554327671 -0800
+
+inference.ipynb: adding fp16 inference
