@@ -30,7 +30,7 @@ class TextMelLoader(torch.utils.data.Dataset):
 
     def get_mel_text_pair(self, audiopath_and_text):
         # separate filename and text
-        audiopath, text = audiopath_and_text[0], audiopath_and_text[1]
+        audiopath, text = audiopath_and_text[0]+'.wav', audiopath_and_text[1]
         text = self.get_text(text)
         mel = self.get_mel(AUDIOLOCATION+audiopath)
         return (text, mel)
