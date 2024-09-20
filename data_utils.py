@@ -7,7 +7,7 @@ import layers
 from utils import load_wav_to_torch, load_filepaths_and_text
 from text import text_to_sequence
 
-AUDIOLOCATION = "/kaggle/input/speechdata/wavs"
+AUDIOLOCATION = "/kaggle/input/speechdata/wavs/"
 SPLITTER = '\t'
 class TextMelLoader(torch.utils.data.Dataset):
     """
